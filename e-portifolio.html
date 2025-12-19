@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Portfolio - Rehan Chowhan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
+            color: #1e293b;
+            background-color: #f8fafc;
+        }
+        .container {
+            max-width: 1000px;
+        }
+        .header-section {
+            background: linear-gradient(135deg, #7f1d1d 0%, #b91c1c 100%);
+            position: relative;
+            overflow: hidden;
+            color: white;
+            padding: 80px 0;
+            margin-bottom: 60px;
+            box-shadow: 0 10px 15px -3px rgba(127, 29, 29, 0.3);
+        }
+        .header-section::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+        .skill-block {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 45px;
+            margin-bottom: 50px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid #e2e8f0;
+            transition: transform 0.2s ease;
+        }
+        .skill-block:hover {
+            transform: translateY(-2px);
+        }
+        .image-placeholder {
+            border: 2px dashed #cbd5e1;
+            background-color: #f1f5f9;
+            height: 240px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #64748b;
+            font-size: 0.9rem;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h2 {
+            color: #7f1d1d;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 30px;
+            font-size: 1.75rem;
+            font-weight: 800;
+        }
+        h2::before {
+            content: "";
+            width: 4px;
+            height: 32px;
+            background-color: #ef4444;
+            border-radius: 4px;
+        }
+        .reflection-content {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #334155;
+        }
+        .reflection-content p {
+            margin-bottom: 1.5rem;
+        }
+        .meta-tag {
+            background-color: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(4px);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        footer {
+            background-color: #ffffff;
+            border-top: 1px solid #e2e8f0;
+            padding: 60px 0;
+            text-align: center;
+            color: #64748b;
+        }
+        .footer-accent {
+            width: 40px;
+            height: 4px;
+            background-color: #ef4444;
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Premium Academic Header -->
+    <header class="header-section">
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <div class="flex justify-center mb-6">
+                <span class="meta-tag">Applied Digital Skills B6ADS04</span>
+            </div>
+            <h1 class="text-5xl font-black mb-4 tracking-tight">Reflective E-Portfolio</h1>
+            <p class="text-xl text-red-100 font-medium">Rehan Chowhan | Student ID: HID106280</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 pb-20">
+
+        <!-- Section 1: EXCEL -->
+        <div class="skill-block">
+            <h2 class="text-2xl font-bold">1. Microsoft Excel: Data Analysis</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+                <div class="image-placeholder">
+                    <img src="images/exl 1.png" alt="Excel Formula Interface" class="h-full w-full object-contain rounded">
+                </div>
+                <div class="image-placeholder">
+                    <img src="images/excel 2.png" alt="Pivot Table Dashboard" class="h-full w-full object-contain rounded">
+                </div>
+            </div>
+            <div class="reflection-content">
+                <p>During this module, I achieved a great degree of skill in using Microsoft Excel, both in terms of automation, via functions, and data synthesis, via Pivot Tables. I developed a sales dataset in which I used logical operators including =IF function to automatically calculate the discounts according to performance thresholds. This helped me understand that conditional logic can reduce the element of human error and be consistent in financial reporting. Using Pivot Tables, I was able to learn how to use disorganized, raw data to create meaningful summaries that enable me to study the total sales by month and product in a short period of time.</p>
+                <p>Business-wise, one would use these skills in jobs related to finance or operations in which there is a need to make fast decisions. I can now create a report in seconds as compared to searching through hundreds of rows manually. Such a degree of competence adds value to my education experience as it enables me to manipulate sophisticated information in other classes. The skill of analyzing data trends by using software such as Pivot Tables is a very important skill in a modern working environment to determine the trends in the market and the best distribution of resources. In the future, I would use these techniques of analysis with the more complex data to initiate data-led strategies.</p>
+            </div>
+        </div>
+
+        <!-- Section 2: WORD -->
+        <div class="skill-block">
+            <h2 class="text-2xl font-bold">2. Microsoft Word: Professional Reporting</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+                <div class="image-placeholder">
+                    <img src="images/word 1.png" alt="Automated Navigation" class="h-full w-full object-contain rounded">
+                </div>
+                <div class="image-placeholder">
+                    <img src="images/word 2.png" alt="Document Aesthetics" class="h-full w-full object-contain rounded">
+                </div>
+            </div>
+            <div class="reflection-content">
+                <p>Learning the art of creating highly professional documents in Microsoft Word has helped me greatly in conveying information to others. In the given task, I paid attention to such structural aspects as the 1.5 line spacing, automatic Tables of Contents (TOC), or such stylistic elements as Drop Caps and page borders. The lesson in how to utilize a TOC was especially useful; it makes long written business reports easy to use and navigate. The consistency of spacing and borders also helped me realize the value of visual hierarchy and white space in ensuring the attention of the reader.</p>
+                <p>The digital workplace is one of the places in which the way in which a document is presented is sometimes more significant than its content. Professional formatting shows that one pays attention to detail and that he or she is dedicated to quality, which is essential in a corporate setting. These tools enable me to come up with academic writing and business proposals that are of industry standards. With automated page numbering and headings, I will be able to maintain consistency in my documents even after a number of edits. This set of skills underlines any position in which administrative control is required or professional contact, and it is important to make sure that all external factors represent the high degree of digital literacy.</p>
+            </div>
+        </div>
+
+        <!-- Section 3: EMERGING TECHNOLOGIES -->
+        <div class="skill-block">
+            <h2 class="text-2xl font-bold">3. Emerging Tech: Generative AI Research</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+                <div class="image-placeholder">
+                    <img src="images/emerging technology 1.png" alt="Digital Culture Research" class="h-full w-full object-contain rounded">
+                </div>
+                <div class="image-placeholder">
+                    <img src="images/emerging technoloy 2.png" alt="Case Study: Klarna" class="h-full w-full object-contain rounded">
+                </div>
+            </div>
+            <div class="reflection-content">
+                <p>My studies on the topic of Emerging Technologies, in particular Generative AI, have offered profound opportunities to understand the way digital environment is evolving. I also covered the basic distinctions between the traditional AI and the Generative AI with its ability to generate novel content, and to perform the complex mental processes. An important section of my research was the case study of Klarna, which demonstrated how AI agents can address the large volumes of customer support more effectively than the traditional approach. This study has pointed out how operational efficiency is no longer only about speed, but it is also about intelligent scaling of resources.</p>
+                <p>These technologies are important in understanding how to remain competitive in the business setting. Nevertheless, my reflection also included the ethical side of the matter, including data privacy and job displacement. It is also evident that even though AI provides productivity 24/7 and quicker decision-making, managers need to weigh the advantages and the accountable application. The learning has made my education more advanced as it has taught me that I should critically analyze the tools as opposed to using them. By joining the modern working environment, I will be more equipped to suggest AI-based solutions, which are effective and ethical.</p>
+            </div>
+        </div>
+
+        <!-- Section 4: AI APPLIED (GENERATIVE AI) -->
+        <div class="skill-block">
+            <h2 class="text-2xl font-bold">4. Generative AI: Practical Workflow</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+                <div class="image-placeholder">
+                    <img src="images/generative ai 1.png" alt="Prompt Engineering" class="h-full w-full object-contain rounded">
+                </div>
+                <div class="image-placeholder">
+                    <img src="images/generative ai 2.png" alt="Automated Flowchart" class="h-full w-full object-contain rounded">
+                </div>
+            </div>
+            <div class="reflection-content">
+                <p>In order to close the gap between theory and practice, I had ChatGPT come up with a business flowchart of AI automation workflows. This was a practical demonstration of the practice of prompt engineering, namely, the ability to give an AI specific instructions so that the AI can produce a desired, high-quality output. Seeing the AI prompted to add software such as Make.com and Zapier, I was able to learn that various software ecosystems could be used to enhance the efficiency of the business. The flow chart derived simplified the intricate concepts visually, and the concepts could be understood by the non-technical stakeholders.</p>
+                <p>This experiment has shown that AI can become a co-creator in the process of creativity. The opportunity to visualize the working process or brainstorm business models by using AI fast is a huge time-saving opportunity in a modern workplace. The most important thing I learned, however, is that human assistance is necessary; AI provides only the first, yet a human should make sure that the received information is correct and pertinent. This ability can be easily applied in marketing or project managerial positions where visual communication is the only way one can demonstrate how new processes work. The ability to create skills in visualizing with AI has provided me with a highly versatile problem-solving tool.</p>
+            </div>
+        </div>
+
+        <!-- Section 5: GOOGLE SLIDES -->
+        <div class="skill-block">
+            <h2 class="text-2xl font-bold">5. Google Slides: Collaborative Tech</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+                <div class="image-placeholder">
+                    <img src="images/google slides 1.png" alt="Presentation Design" class="h-full w-full object-contain rounded">
+                </div>
+                <div class="image-placeholder">
+                    <img src="images/google slides 2.png" alt="Collaboration Features" class="h-full w-full object-contain rounded">
+                </div>
+            </div>
+            <div class="reflection-content">
+                <p>The last element of my portfolio is devoted to Google Slides and the effectiveness of the collaborative digital technologies. Google Slides is a program that enables real-time collaboration, unlike conventional presentation tools, and I utilized this feature in the form of sharing features and the comments option. My professional deck was designed with the main emphasis on visual clarity with the help of specific layouts and image positions. This made me realize that effective presentation is not about what one sees on the screen, but the effective organization of that information to help the audience understand.</p>
+                <p>Teamwork abilities are essential in the contemporary remote workplace which is usually remote. The capability to collaborate with colleagues on the same document instantly will help to minimise problems with version-control and create a more collaborative working atmosphere. These tools have helped improve my learning experience through facilitating group projects and making them more transparent. Presentation skills and teamwork are necessary in a business environment to ensure that one has buy-in with clients or the management. The technical capacity to create presentations of high quality and collaborative mentality to succeed have been taught to me in this module.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Professional Academic Footer -->
+    <footer>
+        <div class="container mx-auto px-6">
+            <p class="font-black text-2xl text-slate-800 mb-1">Rehan Chowhan</p>
+            <p class="text-slate-500 font-medium">BA (Hons) in Business | Student ID: HID106280</p>
+            <div class="footer-accent"></div>
+            <p class="text-xs uppercase tracking-widest font-bold text-slate-400">
+                Holmes Institute Dublin © 2025
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
